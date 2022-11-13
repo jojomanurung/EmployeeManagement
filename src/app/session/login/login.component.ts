@@ -34,8 +34,8 @@ export class LoginComponent implements OnInit, OnDestroy {
 
     this.subs.sink = this.auth.login(username, password).subscribe({
       next: (response) => {
-        this.auth.setSession(response);
-        this.router.navigate(['/']);
+        const url = '/';
+        window.open(url, '_self');
       },
       error: (err) => {
         console.error(err);
