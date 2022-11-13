@@ -19,13 +19,12 @@ export class AuthService {
 
   isAuthenticated() {
     const api$ = this.http
-      .get<any>(this.API + '/api')
+      .get<any>(this.API + '/current/user')
       .pipe(catchError((err) => of(err.error)));
     return lastValueFrom(api$);
   }
 
-  setSession(authResult: any) {
-    localStorage.setItem('access_token', authResult.access_token);
-    localStorage.setItem('user', JSON.stringify(authResult.user));
+  logout() {
+    return this.http.get<any>(this.API+'/auth/logout');
   }
 }
