@@ -35,12 +35,12 @@ function verifyToken(token) {
 /**
  * Fungsi untuk melakukan pengecekan akses login
  */
-function isAuthenticated({ email, password }) {
-  return (
-    dbEmployee.employee.findIndex(
-      (employee) => employee.email === email && employee.password === password
-    ) !== -1
+function isAuthenticated({ username, password }) {
+  const foundEmployee = dbEmployee.employee.find(
+    (employee) =>
+      employee.username === username && employee.password === password
   );
+  return foundEmployee;
 }
 
 server.use(middlewares);
@@ -49,16 +49,18 @@ server.use(jsonServer.bodyParser);
 
 // Post Method untuk api login
 server.post("/auth/login", (req, res) => {
-  const { email, password } = req.body;
-  if (isAuthenticated({ email, password }) === false) {
+  const { username, password } = req.body;
+  const user = isAuthenticated({ username, password });
+
+  if (!user) {
     const status = 401;
-    const message = "Incorrect email or password";
+    const message = "Incorrect username or password";
     res.status(status).json({ status, message });
     return;
   }
-  const access_token = createToken({ email, password });
-  res.status(200).json({ access_token });
-  res.cookie("SESSIONID", access_token, { httpOnly: true, secure: true });
+  delete user.password;
+  const access_token = createToken({ username, password });
+  res.status(200).json({ user, access_token });
 });
 
 // Jika endpoint selain /auth diakses tanpa auth token maka akan throw error 401
