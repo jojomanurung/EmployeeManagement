@@ -80,7 +80,7 @@ server.post("/auth/login", (req, res) => {
     res.status(status).json({ status, message });
     return;
   }
-  delete user.password;
+
   const access_token = createToken(user);
   res.cookie('access_token', access_token, { httpOnly: true });
   res.status(200).json({ message: "Logged in!" });
@@ -99,7 +99,8 @@ server.get("/current/user", isAuthenticated, (req, res) => {
   const token = req.cookies.access_token;
   try {
     const data = verifyToken(token);
-    res.status(200).json({ data })
+    const { id } = data;
+    res.status(200).json({ id })
   } catch (err) {
     const status = 401;
     const message = "Error: token is invalid";
