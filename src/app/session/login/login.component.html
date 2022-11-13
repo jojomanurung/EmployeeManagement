@@ -1,0 +1,52 @@
+<div>
+  <h2>Login</h2>
+</div>
+<form [formGroup]="signForm">
+  <div class="w-19rem field">
+    <mat-form-field class="w-full">
+      <input
+        matInput
+        type="text"
+        formControlName="username"
+        placeholder="Username"
+      />
+      <mat-icon matSuffix class="mr-2 input-suffix">person</mat-icon>
+      <mat-error
+        *ngIf="
+          signForm.controls['username'].touched &&
+          signForm.controls['username'].hasError('required')
+        "
+        >This field is required</mat-error
+      >
+    </mat-form-field>
+  </div>
+  <div class="w-19rem field">
+    <mat-form-field class="w-full">
+      <input
+        #password
+        matInput
+        type="password"
+        formControlName="password"
+        placeholder="Password"
+      />
+      <mat-icon
+        matSuffix
+        class="mr-2 input-suffix cursor-pointer"
+        *ngIf="password.type === 'password'"
+        (click)="password.type = 'text'"
+        >visibility_off</mat-icon
+      >
+      <mat-icon
+        matSuffix
+        class="mr-2 input-suffix cursor-pointer"
+        *ngIf="password.type !== 'password'"
+        (click)="password.type = 'password'"
+        >visibility</mat-icon
+      >
+      <mat-error>This field is required</mat-error>
+    </mat-form-field>
+  </div>
+</form>
+<div>
+  <button mat-raised-button color="primary" class="w-full">Sign In</button>
+</div>
