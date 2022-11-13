@@ -1,0 +1,65 @@
+.table {
+  overflow: auto;
+}
+
+table {
+  width: 100%;
+  th, td {
+    box-shadow: 0.25px 0px 0px 0px grey;
+  }
+}
+
+.mat-column-name {
+  width: 20%;
+}
+.mat-column-email {
+  padding-left: 24px;
+  width: 15%;
+}
+.mat-column-status {
+  padding-left: 24px;
+  width: 10%;
+}
+.mat-column-birthDate {
+  padding-left: 24px;
+  width: 15%;
+}
+.mat-column-action {
+  width: 10%;
+  text-align: center;
+  padding-right: 0 !important;
+}
+
+.mat-column-nameFilter {
+  padding-right: 24px;
+  .mat-form-field {
+    width: 100%;
+  }
+}
+.mat-column-emailFilter {
+  padding-right: 24px;
+  padding-left: 24px;
+  .mat-form-field {
+    width: 100%;
+  }
+}
+.mat-column-statusFilter {
+  padding-right: 24px;
+  padding-left: 24px;
+  .mat-form-field {
+    width: 100%;
+  }
+}
+
+td.mat-column-name {
+  padding-right: 10px;
+}
+td.mat-column-email {
+  padding-right: 20px;
+}
+td.mat-column-status {
+  padding-right: 10px;
+}
+td.mat-column-birthDate {
+  padding-right: 10px;
+}

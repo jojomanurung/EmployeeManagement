@@ -1,1 +1,110 @@
-<p>employee-list works!</p>
+<div class="grid grid-nogutter">
+  <div class="col-12 pt-4 px-4">
+    <h1>List of Employee</h1>
+  </div>
+  <div class="col-12">
+    <div class="grid grid-nogutter max-w-screen px-4">
+      <div class="col-12">
+        <button mat-flat-button color="primary" (click)="addEmployee()">
+          <mat-icon>add</mat-icon>
+          Add Employee
+        </button>
+      </div>
+      <div class="col-12 my-2 table mat-elevation-z2">
+        <table mat-table [dataSource]="dataSource">
+          <!-- Filter row start here! -->
+          <!-- Name filter column -->
+          <ng-container matColumnDef="nameFilter">
+            <th mat-header-cell *matHeaderCellDef>
+              <mat-form-field>
+                <input matInput type="text" />
+              </mat-form-field>
+            </th>
+          </ng-container>
+
+          <!-- Email filter column -->
+          <ng-container matColumnDef="emailFilter">
+            <th mat-header-cell *matHeaderCellDef>
+              <mat-form-field>
+                <input matInput type="text" />
+              </mat-form-field>
+            </th>
+          </ng-container>
+
+          <!-- Birth Date filter column -->
+          <ng-container matColumnDef="birthDateFilter">
+            <th mat-header-cell *matHeaderCellDef></th>
+          </ng-container>
+
+          <!-- Status filter column -->
+          <ng-container matColumnDef="statusFilter">
+            <th mat-header-cell *matHeaderCellDef>
+              <mat-form-field>
+                <input matInput type="text" />
+              </mat-form-field>
+            </th>
+          </ng-container>
+
+          <!-- Action filter column -->
+          <ng-container matColumnDef="actionFilter">
+            <th mat-header-cell *matHeaderCellDef></th>
+          </ng-container>
+
+          <!-- Data row start here! -->
+          <!-- Name column -->
+          <ng-container matColumnDef="name">
+            <th mat-header-cell *matHeaderCellDef>Name</th>
+            <td mat-cell *matCellDef="let element">
+              {{ element.firstName }} {{ element.lastName }}
+            </td>
+          </ng-container>
+
+          <!-- Email column -->
+          <ng-container matColumnDef="email">
+            <th mat-header-cell *matHeaderCellDef>Email</th>
+            <td mat-cell *matCellDef="let element">
+              {{ element.email }}
+            </td>
+          </ng-container>
+
+          <!-- Birth Date column -->
+          <ng-container matColumnDef="birthDate">
+            <th mat-header-cell *matHeaderCellDef>Birth Date</th>
+            <td mat-cell *matCellDef="let element">
+              {{ element.birthDate }}
+            </td>
+          </ng-container>
+
+          <!-- Status column -->
+          <ng-container matColumnDef="status">
+            <th mat-header-cell *matHeaderCellDef>Status</th>
+            <td mat-cell *matCellDef="let element">
+              {{ element.status === "active" ? "Active" : "Deleted" }}
+            </td>
+          </ng-container>
+
+          <!-- Action column -->
+          <ng-container matColumnDef="action">
+            <th mat-header-cell *matHeaderCellDef>Action</th>
+            <td mat-cell *matCellDef="let element">
+              <button mat-icon-button (click)="editEmployee()">
+                <mat-icon>edit</mat-icon>
+              </button>
+              <button mat-icon-button (click)="deleteEmployee()">
+                <mat-icon>delete</mat-icon>
+              </button>
+            </td>
+          </ng-container>
+
+          <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+          <tr mat-header-row *matHeaderRowDef="filterColumns"></tr>
+          <tr mat-row *matRowDef="let row; columns: displayedColumns"></tr>
+        </table>
+        <mat-paginator
+          [pageSizeOptions]="[5, 10]"
+          showFirstLastButtons="true"
+        ></mat-paginator>
+      </div>
+    </div>
+  </div>
+</div>
