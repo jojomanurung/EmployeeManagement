@@ -25,6 +25,6 @@ export class AuthService {
   }
 
   logout() {
-    return this.http.get<any>(this.API+'/auth/logout');
+    return this.http.get<any>(this.API + '/auth/logout');
   }
 }
