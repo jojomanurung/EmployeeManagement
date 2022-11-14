@@ -20,6 +20,7 @@ import { MatTableModule } from '@angular/material/table';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatTooltipModule } from '@angular/material/tooltip';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { MomentDatePipe } from '../shared/pipes/date.pipe';
 
 const Material: any = [
   MatAutocompleteModule,
@@ -48,6 +49,7 @@ const Material: any = [
     EmployeeRoutingModule,
     FormsModule,
     ReactiveFormsModule,
+    MomentDatePipe,
     ...Material
   ]
 })
