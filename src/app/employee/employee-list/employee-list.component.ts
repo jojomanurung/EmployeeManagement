@@ -1,6 +1,7 @@
 import { Component, OnDestroy, OnInit, ViewChild } from '@angular/core';
 import { FormControl } from '@angular/forms';
 import { MatPaginator } from '@angular/material/paginator';
+import { MatSort } from '@angular/material/sort';
 import { MatTableDataSource } from '@angular/material/table';
 import { Router } from '@angular/router';
 import { debounceTime, map, Observable, startWith } from 'rxjs';
@@ -34,6 +35,7 @@ export class EmployeeListComponent implements OnInit, OnDestroy {
 
   dataSource: MatTableDataSource<Employee> = new MatTableDataSource();
   @ViewChild(MatPaginator) paginator!: MatPaginator;
+  @ViewChild(MatSort) sort!: MatSort;
 
   nameFilter = new FormControl('');
   emailFilter = new FormControl('');
@@ -72,6 +74,7 @@ export class EmployeeListComponent implements OnInit, OnDestroy {
           this.dataSource.data = response;
           this.dataSource.paginator = this.paginator;
           this.dataSource.filterPredicate = this.employeeFilterPredicate;
+          this.dataSource.sort = this.sort;
         }
       },
       error: (err) => {
