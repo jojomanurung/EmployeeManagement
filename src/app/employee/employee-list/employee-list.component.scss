@@ -16,6 +16,10 @@ table {
   padding-left: 24px;
   width: 15%;
 }
+.mat-column-group {
+  padding-left: 24px;
+  width: 10%;
+}
 .mat-column-status {
   padding-left: 24px;
   width: 10%;
@@ -43,6 +47,13 @@ table {
     width: 100%;
   }
 }
+.mat-column-groupFilter {
+  padding-right: 24px;
+  padding-left: 24px;
+  .mat-form-field {
+    width: 100%;
+  }
+}
 .mat-column-statusFilter {
   padding-right: 24px;
   padding-left: 24px;
@@ -56,6 +67,9 @@ td.mat-column-name {
 }
 td.mat-column-email {
   padding-right: 20px;
+}
+td.mat-column-group {
+  padding-right: 10px;
 }
 td.mat-column-status {
   padding-right: 10px;

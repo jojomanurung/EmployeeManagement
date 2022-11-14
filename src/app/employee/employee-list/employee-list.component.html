@@ -17,7 +17,12 @@
           <ng-container matColumnDef="nameFilter">
             <th mat-header-cell *matHeaderCellDef>
               <mat-form-field>
-                <input matInput type="text" />
+                <input
+                  matInput
+                  type="text"
+                  [formControl]="nameFilter"
+                  placeholder="Search"
+                />
               </mat-form-field>
             </th>
           </ng-container>
@@ -26,7 +31,12 @@
           <ng-container matColumnDef="emailFilter">
             <th mat-header-cell *matHeaderCellDef>
               <mat-form-field>
-                <input matInput type="text" />
+                <input
+                  matInput
+                  type="text"
+                  [formControl]="emailFilter"
+                  placeholder="Search"
+                />
               </mat-form-field>
             </th>
           </ng-container>
@@ -36,11 +46,42 @@
             <th mat-header-cell *matHeaderCellDef></th>
           </ng-container>
 
+          <!-- Group filter column -->
+          <ng-container matColumnDef="groupFilter">
+            <th mat-header-cell *matHeaderCellDef>
+              <mat-form-field>
+                <input
+                  matInput
+                  type="text"
+                  [formControl]="groupFilter"
+                  placeholder="Search"
+                  [matAutocomplete]="auto"
+                />
+                <mat-autocomplete #auto="matAutocomplete">
+                  <mat-option *ngFor="let option of filteredGroupList | async" [value]="option" (click)="selectGroup(option)">
+                    {{ option }}
+                  </mat-option>
+                </mat-autocomplete>
+              </mat-form-field>
+            </th>
+          </ng-container>
+
           <!-- Status filter column -->
           <ng-container matColumnDef="statusFilter">
             <th mat-header-cell *matHeaderCellDef>
               <mat-form-field>
-                <input matInput type="text" />
+                <input
+                  matInput
+                  type="text"
+                  [formControl]="statusFilter"
+                  placeholder="Search"
+                  [matAutocomplete]="auto"
+                />
+                <mat-autocomplete #auto="matAutocomplete" [displayWith]="displayFn">
+                  <mat-option *ngFor="let option of filteredStatusList | async" [value]="option" (click)="selectStatus(option)">
+                    {{ option === "active" ? "Active" : "Deleted" }}
+                  </mat-option>
+                </mat-autocomplete>
               </mat-form-field>
             </th>
           </ng-container>
@@ -72,6 +113,14 @@
             <th mat-header-cell *matHeaderCellDef>Birth Date</th>
             <td mat-cell *matCellDef="let element">
               {{ element.birthDate }}
+            </td>
+          </ng-container>
+
+          <!-- Status column -->
+          <ng-container matColumnDef="group">
+            <th mat-header-cell *matHeaderCellDef>Group</th>
+            <td mat-cell *matCellDef="let element">
+              {{ element.group }}
             </td>
           </ng-container>
 
