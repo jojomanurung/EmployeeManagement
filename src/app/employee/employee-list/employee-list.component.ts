@@ -5,7 +5,14 @@ import { MatSnackBar } from '@angular/material/snack-bar';
 import { MatSort } from '@angular/material/sort';
 import { MatTableDataSource } from '@angular/material/table';
 import { Router } from '@angular/router';
-import { debounceTime, map, Observable, startWith } from 'rxjs';
+import {
+  concat,
+  concatMap,
+  debounceTime,
+  map,
+  Observable,
+  startWith,
+} from 'rxjs';
 import { Employee } from 'src/app/shared/interfaces/employee.type';
 import { EmployeeService } from 'src/app/shared/services/employee.service';
 import { SubSink } from 'subsink2';
@@ -204,6 +211,18 @@ export class EmployeeListComponent implements OnInit, OnDestroy {
       horizontalPosition: 'center',
       panelClass: 'delete',
     });
+
+    this.subs.sink = snackBar
+      .afterDismissed()
+      .pipe(
+        debounceTime(500),
+        concatMap(() => {
+          return this.employeeService.deleteEmployee(id);
+        })
+      )
+      .subscribe(() => {
+        this.getEmployee();
+      });
   }
 
   ngOnDestroy(): void {
