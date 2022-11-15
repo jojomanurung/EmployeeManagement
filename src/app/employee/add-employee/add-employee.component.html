@@ -1,188 +1,232 @@
-<form [formGroup]="employeeForm">
-  <div class="w-19rem field">
-    <mat-form-field class="w-full">
-      <input
-        matInput
-        type="text"
-        formControlName="username"
-        placeholder="Username"
-      />
-      <mat-error
-        *ngIf="
-          employeeForm.controls['username'].touched &&
-          employeeForm.controls['username'].hasError('required')
-        "
-        >This field is required</mat-error
-      >
-    </mat-form-field>
-    <mat-form-field class="w-full">
-      <input
-        #password
-        matInput
-        type="password"
-        formControlName="password"
-        placeholder="Password"
-      />
-      <mat-icon
-        matSuffix
-        class="input-suffix cursor-pointer"
-        *ngIf="password.type === 'password'"
-        (click)="password.type = 'text'"
-        >visibility_off</mat-icon
-      >
-      <mat-icon
-        matSuffix
-        class="input-suffix cursor-pointer"
-        *ngIf="password.type !== 'password'"
-        (click)="password.type = 'password'"
-        >visibility</mat-icon
-      >
-      <mat-error
-        *ngIf="
-          employeeForm.controls['password'].touched &&
-          employeeForm.controls['password'].hasError('required')
-        "
-        >This field is required</mat-error
-      >
-    </mat-form-field>
-    <mat-form-field class="w-full">
-      <input
-        matInput
-        type="text"
-        formControlName="firstName"
-        placeholder="First Name"
-      />
-      <mat-error
-        *ngIf="
-          employeeForm.controls['firstName'].touched &&
-          employeeForm.controls['firstName'].hasError('required')
-        "
-        >This field is required</mat-error
-      >
-    </mat-form-field>
-    <mat-form-field class="w-full">
-      <input
-        matInput
-        type="lastName"
-        formControlName="lastName"
-        placeholder="Last Name"
-      />
-      <mat-error
-        *ngIf="
-          employeeForm.controls['lastName'].touched &&
-          employeeForm.controls['lastName'].hasError('required')
-        "
-        >This field is required</mat-error
-      >
-    </mat-form-field>
-    <mat-form-field class="w-full">
-      <input
-        matInput
-        type="email"
-        formControlName="email"
-        placeholder="Email"
-      />
-      <mat-error
-        *ngIf="
-          employeeForm.controls['email'].touched &&
-          employeeForm.controls['email'].hasError('required')
-        "
-        >This field is required</mat-error
-      >
-      <mat-error *ngIf="employeeForm.controls['email'].hasError('email')"
-        >Invalid email</mat-error
-      >
-    </mat-form-field>
-    <mat-form-field class="w-full">
-      <input
-        matInput
-        formControlName="birthDate"
-        placeholder="Birth Date"
-        [max]="today"
-        [matDatepicker]="birth"
-        (click)="birth.open()"
-      />
-      <mat-datepicker-toggle matSuffix [for]="birth"></mat-datepicker-toggle>
-      <mat-datepicker #birth></mat-datepicker>
-      <mat-error
-        *ngIf="
-          employeeForm.controls['birthDate'].touched &&
-          employeeForm.controls['birthDate'].hasError('required')
-        "
-        >This field is required</mat-error
-      >
-    </mat-form-field>
-    <mat-form-field class="w-full">
-      <input
-        matInput
-        type="number"
-        formControlName="basicSalary"
-        placeholder="Basic Salary"
-      />
-      <mat-error
-        *ngIf="
-          employeeForm.controls['basicSalary'].touched &&
-          employeeForm.controls['basicSalary'].hasError('required')
-        "
-        >This field is required</mat-error
-      >
-    </mat-form-field>
-    <mat-form-field class="w-full">
-      <input
-        matInput
-        type="text"
-        formControlName="status"
-        placeholder="Status"
-        [matAutocomplete]="status"
-      />
-      <mat-autocomplete #status="matAutocomplete" [displayWith]="displayFn">
-        <mat-option
-          *ngFor="let option of filteredStatusList | async"
-          [value]="option"
-          (click)="selectStatus(option)"
-        >
-          {{ option === "married" ? "Married" : "Single" }}
-        </mat-option>
-      </mat-autocomplete>
-      <mat-error
-        *ngIf="
-          employeeForm.controls['status'].touched &&
-          employeeForm.controls['status'].hasError('required')
-        "
-        >This field is required</mat-error
-      >
-      <mat-error *ngIf="employeeForm.controls['status'].hasError('status')"
-        >This field value is unknown, please select one option</mat-error
-      >
-    </mat-form-field>
-    <mat-form-field class="w-full">
-      <input
-        matInput
-        type="text"
-        formControlName="group"
-        placeholder="Group"
-        [matAutocomplete]="auto"
-      />
-      <mat-autocomplete #auto="matAutocomplete">
-        <mat-option
-          *ngFor="let option of filteredGroupList | async"
-          [value]="option"
-          (click)="selectGroup(option)"
-        >
-          {{ option }}
-        </mat-option>
-      </mat-autocomplete>
-      <mat-error
-        *ngIf="
-          employeeForm.controls['group'].touched &&
-          employeeForm.controls['group'].hasError('required')
-        "
-        >This field is required</mat-error
-      >
-      <mat-error *ngIf="employeeForm.controls['group'].hasError('group')"
-        >This field value is unknown, please select one option</mat-error
-      >
-    </mat-form-field>
+<div class="grid grid-nogutter h-full w-full">
+  <div
+    class="col-12 flex flex-column justify-content-center align-items-center"
+  >
+    <div class="title flex mb-4">
+      <h3 class="title-text m-0">Add Employee</h3>
+    </div>
+    <mat-card class="card mat-elevation-z3">
+      <mat-card-content>
+        <form [formGroup]="employeeForm">
+          <div class="grid grid-nogutter">
+            <div class="w-19rem field">
+              <mat-form-field class="w-full">
+                <input
+                  matInput
+                  type="text"
+                  formControlName="username"
+                  placeholder="Username"
+                />
+                <mat-error
+                  *ngIf="
+                    employeeForm.controls['username'].touched &&
+                    employeeForm.controls['username'].hasError('required')
+                  "
+                  >This field is required</mat-error
+                >
+              </mat-form-field>
+            </div>
+            <div class="w-19rem ml-5 field">
+              <mat-form-field class="w-full">
+                <input
+                  #password
+                  matInput
+                  type="password"
+                  formControlName="password"
+                  placeholder="Password"
+                />
+                <mat-icon
+                  matSuffix
+                  class="input-suffix cursor-pointer"
+                  *ngIf="password.type === 'password'"
+                  (click)="password.type = 'text'"
+                  >visibility_off</mat-icon
+                >
+                <mat-icon
+                  matSuffix
+                  class="input-suffix cursor-pointer"
+                  *ngIf="password.type !== 'password'"
+                  (click)="password.type = 'password'"
+                  >visibility</mat-icon
+                >
+                <mat-error
+                  *ngIf="
+                    employeeForm.controls['password'].touched &&
+                    employeeForm.controls['password'].hasError('required')
+                  "
+                  >This field is required</mat-error
+                >
+              </mat-form-field>
+            </div>
+          </div>
+          <div class="grid grid-nogutter">
+            <div class="w-19rem field">
+              <mat-form-field class="w-full">
+                <input
+                  matInput
+                  type="text"
+                  formControlName="firstName"
+                  placeholder="First Name"
+                />
+                <mat-error
+                  *ngIf="
+                    employeeForm.controls['firstName'].touched &&
+                    employeeForm.controls['firstName'].hasError('required')
+                  "
+                  >This field is required</mat-error
+                >
+              </mat-form-field>
+            </div>
+            <div class="w-19rem ml-5 field">
+              <mat-form-field class="w-full">
+                <input
+                  matInput
+                  type="lastName"
+                  formControlName="lastName"
+                  placeholder="Last Name"
+                />
+                <mat-error
+                  *ngIf="
+                    employeeForm.controls['lastName'].touched &&
+                    employeeForm.controls['lastName'].hasError('required')
+                  "
+                  >This field is required</mat-error
+                >
+              </mat-form-field>
+            </div>
+          </div>
+          <div class="grid grid-nogutter">
+            <div class="w-19rem field">
+              <mat-form-field class="w-full">
+                <input
+                  matInput
+                  type="email"
+                  formControlName="email"
+                  placeholder="Email"
+                />
+                <mat-error
+                  *ngIf="
+                    employeeForm.controls['email'].touched &&
+                    employeeForm.controls['email'].hasError('required')
+                  "
+                  >This field is required</mat-error
+                >
+                <mat-error *ngIf="employeeForm.controls['email'].hasError('email')"
+                  >Invalid email</mat-error
+                >
+              </mat-form-field>
+            </div>
+            <div class="w-19rem ml-5 field">
+              <mat-form-field class="w-full">
+                <input
+                  matInput
+                  formControlName="birthDate"
+                  placeholder="Birth Date"
+                  [max]="today"
+                  [matDatepicker]="birth"
+                  (click)="birth.open()"
+                />
+                <mat-datepicker-toggle matSuffix [for]="birth"></mat-datepicker-toggle>
+                <mat-datepicker #birth></mat-datepicker>
+                <mat-error
+                  *ngIf="
+                    employeeForm.controls['birthDate'].touched &&
+                    employeeForm.controls['birthDate'].hasError('required')
+                  "
+                  >This field is required</mat-error
+                >
+              </mat-form-field>
+            </div>
+          </div>
+          <div class="grid grid-nogutter">
+            <div class="w-19rem field">
+              <mat-form-field class="w-full">
+                <input
+                  matInput
+                  type="number"
+                  formControlName="basicSalary"
+                  placeholder="Basic Salary"
+                />
+                <mat-error
+                  *ngIf="
+                    employeeForm.controls['basicSalary'].touched &&
+                    employeeForm.controls['basicSalary'].hasError('required')
+                  "
+                  >This field is required</mat-error
+                >
+              </mat-form-field>
+            </div>
+            <div class="w-19rem ml-5 field">
+              <mat-form-field class="w-full">
+                <input
+                  matInput
+                  type="text"
+                  formControlName="status"
+                  placeholder="Status"
+                  [matAutocomplete]="status"
+                />
+                <mat-autocomplete #status="matAutocomplete" [displayWith]="displayFn">
+                  <mat-option
+                    *ngFor="let option of filteredStatusList | async"
+                    [value]="option"
+                    (click)="selectStatus(option)"
+                  >
+                    {{ option === "married" ? "Married" : "Single" }}
+                  </mat-option>
+                </mat-autocomplete>
+                <mat-error
+                  *ngIf="
+                    employeeForm.controls['status'].touched &&
+                    employeeForm.controls['status'].hasError('required')
+                  "
+                  >This field is required</mat-error
+                >
+                <mat-error *ngIf="employeeForm.controls['status'].hasError('status')"
+                  >This field value is unknown, please select one option</mat-error
+                >
+              </mat-form-field>
+            </div>
+          </div>
+          <div class="w-19rem field">
+            <mat-form-field class="w-full">
+              <input
+                matInput
+                type="text"
+                formControlName="group"
+                placeholder="Group"
+                [matAutocomplete]="auto"
+              />
+              <mat-autocomplete #auto="matAutocomplete">
+                <mat-option
+                  *ngFor="let option of filteredGroupList | async"
+                  [value]="option"
+                  (click)="selectGroup(option)"
+                >
+                  {{ option }}
+                </mat-option>
+              </mat-autocomplete>
+              <mat-error
+                *ngIf="
+                  employeeForm.controls['group'].touched &&
+                  employeeForm.controls['group'].hasError('required')
+                "
+                >This field is required</mat-error
+              >
+              <mat-error *ngIf="employeeForm.controls['group'].hasError('group')"
+                >This field value is unknown, please select one option</mat-error
+              >
+            </mat-form-field>
+          </div>
+        </form>
+        <div class="grid grid-nogutter justify-end">
+          <a mat-button [disableRipple]="true" color="warn" routerLink="/employee-list">Cancel</a>
+          <button mat-raised-button color="primary" (click)="addEmployee()">
+            Confirm
+          </button>
+        </div>
+      </mat-card-content>
+    </mat-card>
   </div>
-  <div class="w-19rem field"></div>
-</form>
+</div>
+
+

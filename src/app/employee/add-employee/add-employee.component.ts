@@ -29,8 +29,11 @@ export class AddEmployeeComponent implements OnInit, OnDestroy {
     lastName: new FormControl('', [Validators.required]),
     email: new FormControl('', [Validators.required, CustomValidators.email]),
     birthDate: new FormControl(null, [Validators.required]),
-    basicSalary: new FormControl(0, [Validators.required]),
-    status: new FormControl('', [Validators.required, CustomValidators.arrayString(this.statusList, 'status')]),
+    basicSalary: new FormControl(null, [Validators.required]),
+    status: new FormControl('', [
+      Validators.required,
+      CustomValidators.arrayString(this.statusList, 'status'),
+    ]),
     group: new FormControl('', [Validators.required]),
     description: new FormControl(moment(new Date())),
   });
@@ -47,18 +50,24 @@ export class AddEmployeeComponent implements OnInit, OnDestroy {
 
   initAutoComplete() {
     // To add validators arrayString to dropdown
-    this.employeeForm.controls['group'].addValidators(CustomValidators.arrayString(this.groupList, 'group'));
+    this.employeeForm.controls['group'].addValidators(
+      CustomValidators.arrayString(this.groupList, 'group')
+    );
     this.employeeForm.controls['group'].updateValueAndValidity();
 
     // For autocomplete group dropdown
-    this.filteredGroupList = this.employeeForm.controls['group'].valueChanges.pipe(
+    this.filteredGroupList = this.employeeForm.controls[
+      'group'
+    ].valueChanges.pipe(
       startWith(''),
       debounceTime(300),
       map((value) => this.dropdownFilter(value || '', 'group'))
     );
 
     // For autocomplete status dropdown
-    this.filteredStatusList = this.employeeForm.controls['status'].valueChanges.pipe(
+    this.filteredStatusList = this.employeeForm.controls[
+      'status'
+    ].valueChanges.pipe(
       startWith(''),
       debounceTime(300),
       map((value) => this.dropdownFilter(value || '', 'status'))
@@ -95,6 +104,27 @@ export class AddEmployeeComponent implements OnInit, OnDestroy {
       : option === 'single'
       ? 'Single'
       : '';
+  }
+
+  addEmployee() {
+    if (this.employeeForm.invalid) {
+      this.employeeForm.markAllAsTouched();
+      window.alert('Form invalid please fill all the fields');
+      return;
+    }
+
+    const payload = this.employeeForm.value;
+
+    this.subs.sink = this.employeeService.addNewEmployee(payload).subscribe({
+      next: (response) => {
+        if (response) {
+          this.router.navigate(['employee-list']);
+        }
+      },
+      error: (err) => {
+        console.error(err);
+      },
+    });
   }
 
   ngOnDestroy(): void {
