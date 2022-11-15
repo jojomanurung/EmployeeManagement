@@ -22,6 +22,12 @@ import { MatTooltipModule } from '@angular/material/tooltip';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MomentDatePipe } from '../shared/pipes/date.pipe';
+import { DateAdapter, MAT_DATE_FORMATS, MAT_DATE_LOCALE } from '@angular/material/core';
+import {
+  MAT_MOMENT_DATE_FORMATS,
+  MomentDateAdapter,
+  MAT_MOMENT_DATE_ADAPTER_OPTIONS,
+} from '@angular/material-moment-adapter';
 
 const Material: any = [
   MatAutocompleteModule,
@@ -37,7 +43,7 @@ const Material: any = [
   MatTableModule,
   MatToolbarModule,
   MatTooltipModule,
-  MatSnackBarModule
+  MatSnackBarModule,
 ];
 
 @NgModule({
@@ -53,6 +59,15 @@ const Material: any = [
     ReactiveFormsModule,
     MomentDatePipe,
     ...Material
+  ],
+  providers: [
+    {provide: MAT_DATE_LOCALE, useValue: 'id'},
+    {
+      provide: DateAdapter,
+      useClass: MomentDateAdapter,
+      deps: [MAT_DATE_LOCALE, MAT_MOMENT_DATE_ADAPTER_OPTIONS],
+    },
+    {provide: MAT_DATE_FORMATS, useValue: MAT_MOMENT_DATE_FORMATS},
   ]
 })
 export class EmployeeModule { }

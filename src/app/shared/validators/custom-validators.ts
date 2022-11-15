@@ -15,6 +15,18 @@ export class CustomValidators {
       return pattern.test(control.value) ? null : { [name]: control.value };
     };
   }
+
+  static arrayString(array: string[], name: string): ValidatorFn {
+    return (control: AbstractControl): { [key: string]: any } | null => {
+      if (isEmptyInputValue(control.value)) {
+        return null; // don't validate when control is empty
+      }
+
+      const stringMatch = !!array.find((element) => element === control.value);
+
+      return stringMatch ? null : { [name]: control.value };
+    };
+  }
 }
 
 function isEmptyInputValue(value: any) {
