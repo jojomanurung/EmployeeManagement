@@ -1,6 +1,7 @@
 import { Component, OnDestroy, OnInit, ViewChild } from '@angular/core';
 import { FormControl } from '@angular/forms';
 import { MatPaginator } from '@angular/material/paginator';
+import { MatSnackBar } from '@angular/material/snack-bar';
 import { MatSort } from '@angular/material/sort';
 import { MatTableDataSource } from '@angular/material/table';
 import { Router } from '@angular/router';
@@ -55,9 +56,12 @@ export class EmployeeListComponent implements OnInit, OnDestroy {
   statusList: string[] = ['active', 'deleted'];
   filteredStatusList!: Observable<string[]>;
 
+  snackBarDuration = 2;
+
   constructor(
     private employeeService: EmployeeService,
-    private router: Router
+    private router: Router,
+    private _snackBar: MatSnackBar
   ) {}
 
   ngOnInit(): void {
@@ -180,12 +184,26 @@ export class EmployeeListComponent implements OnInit, OnDestroy {
     this.router.navigate(['add-employee']);
   }
 
-  editEmployee() {
-    // code here
+  editEmployee(id: number) {
+    const snackBar = this._snackBar.open('Edit Successfully', undefined, {
+      duration: this.snackBarDuration * 1000,
+      verticalPosition: 'top',
+      horizontalPosition: 'center',
+      panelClass: 'edit',
+    });
+
+    this.subs.sink = snackBar.afterDismissed().subscribe(() => {
+      this.router.navigate(['add-employee']);
+    });
   }
 
-  deleteEmployee() {
-    // code here
+  deleteEmployee(id: number) {
+    const snackBar = this._snackBar.open('Delete Successfully', undefined, {
+      duration: this.snackBarDuration * 1000,
+      verticalPosition: 'top',
+      horizontalPosition: 'center',
+      panelClass: 'delete',
+    });
   }
 
   ngOnDestroy(): void {

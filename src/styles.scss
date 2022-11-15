@@ -13,3 +13,13 @@ body {
   margin: 0;
   font-family: Roboto, "Helvetica Neue", sans-serif;
 }
+
+// custom class for snackbar Angular material
+.mat-snack-bar-container.edit {
+  color: black;
+  background-color: rgb(221, 221, 0);
+}
+.mat-snack-bar-container.delete {
+  color: whitesmoke;
+  background-color: rgb(174, 13, 13);
+}

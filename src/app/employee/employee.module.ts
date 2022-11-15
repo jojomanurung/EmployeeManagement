@@ -19,6 +19,7 @@ import { MatSortModule } from '@angular/material/sort';
 import { MatTableModule } from '@angular/material/table';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatTooltipModule } from '@angular/material/tooltip';
+import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MomentDatePipe } from '../shared/pipes/date.pipe';
 
@@ -36,6 +37,7 @@ const Material: any = [
   MatTableModule,
   MatToolbarModule,
   MatTooltipModule,
+  MatSnackBarModule
 ];
 
 @NgModule({
