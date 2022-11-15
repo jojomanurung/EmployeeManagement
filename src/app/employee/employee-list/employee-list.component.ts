@@ -60,7 +60,7 @@ export class EmployeeListComponent implements OnInit, OnDestroy {
   groupList: string[] = [];
   filteredGroupList!: Observable<string[]>;
 
-  statusList: string[] = ['active', 'deleted'];
+  statusList: string[] = ['married', 'single'];
   filteredStatusList!: Observable<string[]>;
 
   snackBarDuration = 2;
@@ -180,10 +180,10 @@ export class EmployeeListComponent implements OnInit, OnDestroy {
 
   // displayFunction for matAutoComplete Status
   displayFn(option: string): string {
-    return option === 'active'
-      ? 'Active'
-      : option === 'deleted'
-      ? 'Deleted'
+    return option === 'married'
+      ? 'Married'
+      : option === 'single'
+      ? 'Single'
       : '';
   }
 

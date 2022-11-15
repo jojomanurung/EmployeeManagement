@@ -9,7 +9,7 @@
       "email": "JOsborne@mattis.net",
       "birthDate": "1996-09-06T00:12:36.603Z",
       "basicSalary": 80000,
-      "status": "active",
+      "status": "married",
       "group": "Finance",
       "description": "2020-03-03T00:17:28.153Z"
     },
@@ -22,7 +22,7 @@
       "email": "LGray@morbi.com",
       "birthDate": "1993-10-27T21:22:24.484Z",
       "basicSalary": 80000,
-      "status": "active",
+      "status": "married",
       "group": "Frontend",
       "description": "2020-01-02T23:27:49.811Z"
     },
@@ -35,7 +35,7 @@
       "email": "TKohn@augue.org",
       "birthDate": "1992-01-24T11:10:56.521Z",
       "basicSalary": 50000,
-      "status": "active",
+      "status": "married",
       "group": "Frontend",
       "description": "2020-01-09T18:52:40.946Z"
     },
@@ -48,7 +48,7 @@
       "email": "MMeaney@lacus.ly",
       "birthDate": "1990-02-03T06:23:59.933Z",
       "basicSalary": 50000,
-      "status": "active",
+      "status": "married",
       "group": "Project Manager",
       "description": "2020-04-08T18:17:59.646Z"
     },
@@ -61,7 +61,7 @@
       "email": "CBowman@suspendisse.com",
       "birthDate": "1996-11-23T23:01:10.158Z",
       "basicSalary": 50000,
-      "status": "deleted",
+      "status": "single",
       "group": "Business",
       "description": "2020-12-12T01:42:46.000Z"
     },
@@ -74,7 +74,7 @@
       "email": "SPatel@dolor.org",
       "birthDate": "1995-01-14T01:13:31.847Z",
       "basicSalary": 65000,
-      "status": "deleted",
+      "status": "single",
       "group": "UI/UX",
       "description": "2020-08-05T15:13:57.426Z"
     },
@@ -87,7 +87,7 @@
       "email": "NCarnu@sed.ly",
       "birthDate": "1997-08-05T13:59:54.417Z",
       "basicSalary": 80000,
-      "status": "active",
+      "status": "married",
       "group": "Quality Assurance",
       "description": "2020-03-01T15:53:10.751Z"
     },
@@ -100,7 +100,7 @@
       "email": "THeilman@magna.net",
       "birthDate": "1998-02-07T10:07:20.423Z",
       "basicSalary": 65000,
-      "status": "active",
+      "status": "married",
       "group": "Data Science",
       "description": "2020-08-25T13:25:34.722Z"
     },
@@ -113,7 +113,7 @@
       "email": "SOliver@curabitur.net",
       "birthDate": "1995-07-02T09:52:45.872Z",
       "basicSalary": 80000,
-      "status": "deleted",
+      "status": "single",
       "group": "Business",
       "description": "2020-03-14T19:20:06.294Z"
     },
@@ -126,7 +126,7 @@
       "email": "DMarina@tellus.gov",
       "birthDate": "1993-05-21T06:43:17.895Z",
       "basicSalary": 65000,
-      "status": "deleted",
+      "status": "single",
       "group": "Machine Learning",
       "description": "2020-02-19T19:11:53.902Z"
     },
@@ -139,7 +139,7 @@
       "email": "CShaffer@adipiscing.gov",
       "birthDate": "1997-03-17T12:36:55.576Z",
       "basicSalary": 80000,
-      "status": "deleted",
+      "status": "single",
       "group": "Quality Assurance",
       "description": "2019-09-02T12:46:12.970Z"
     },
@@ -152,7 +152,7 @@
       "email": "AKubota@risus.com",
       "birthDate": "1990-01-03T12:50:55.934Z",
       "basicSalary": 50000,
-      "status": "active",
+      "status": "married",
       "group": "UI/UX",
       "description": "2019-04-27T20:36:44.828Z"
     },
@@ -165,7 +165,7 @@
       "email": "AMoudry@ac.com",
       "birthDate": "1993-12-30T18:59:04.775Z",
       "basicSalary": 50000,
-      "status": "active",
+      "status": "married",
       "group": "Finance",
       "description": "2020-01-22T10:17:49.541Z"
     },
@@ -178,7 +178,7 @@
       "email": "BMedina@curabitur.gov",
       "birthDate": "1997-07-05T14:44:03.957Z",
       "basicSalary": 65000,
-      "status": "deleted",
+      "status": "single",
       "group": "DevOps",
       "description": "2019-11-30T07:24:33.089Z"
     },
@@ -191,7 +191,7 @@
       "email": "ERahn@hendrerit.net",
       "birthDate": "1990-11-06T13:54:45.089Z",
       "basicSalary": 65000,
-      "status": "deleted",
+      "status": "single",
       "group": "Project Manager",
       "description": "2019-03-27T14:32:55.175Z"
     },
@@ -204,7 +204,7 @@
       "email": "ACardenas@dolor.com",
       "birthDate": "1998-07-05T10:02:28.874Z",
       "basicSalary": 50000,
-      "status": "deleted",
+      "status": "single",
       "group": "Finance",
       "description": "2020-01-14T15:43:49.092Z"
     },
@@ -217,7 +217,7 @@
       "email": "MMorse@sed.com",
       "birthDate": "1991-11-27T18:52:50.139Z",
       "basicSalary": 80000,
-      "status": "active",
+      "status": "married",
       "group": "UI/UX",
       "description": "2020-12-25T18:55:46.283Z"
     },
@@ -230,7 +230,7 @@
       "email": "TDayton@non.io",
       "birthDate": "1995-03-07T04:43:48.783Z",
       "basicSalary": 80000,
-      "status": "active",
+      "status": "married",
       "group": "DevOps",
       "description": "2019-03-23T18:59:12.952Z"
     },
@@ -243,7 +243,7 @@
       "email": "BChenoweth@non.io",
       "birthDate": "1999-04-15T09:24:04.756Z",
       "basicSalary": 50000,
-      "status": "deleted",
+      "status": "single",
       "group": "Quality Assurance",
       "description": "2020-05-01T21:03:33.180Z"
     },
@@ -256,7 +256,7 @@
       "email": "SAlbright@ipsum.gov",
       "birthDate": "1992-03-13T00:03:10.903Z",
       "basicSalary": 65000,
-      "status": "active",
+      "status": "married",
       "group": "Machine Learning",
       "description": "2019-04-08T22:01:51.846Z"
     },
@@ -269,7 +269,7 @@
       "email": "WFederico@etiam.org",
       "birthDate": "1990-09-09T06:29:07.354Z",
       "basicSalary": 65000,
-      "status": "deleted",
+      "status": "single",
       "group": "Project Manager",
       "description": "2019-12-14T13:14:03.238Z"
     },
@@ -282,7 +282,7 @@
       "email": "JDeals@risus.io",
       "birthDate": "1996-01-02T15:28:24.270Z",
       "basicSalary": 65000,
-      "status": "active",
+      "status": "married",
       "group": "Machine Learning",
       "description": "2019-05-08T18:24:32.474Z"
     },
@@ -295,7 +295,7 @@
       "email": "SPuri@odio.net",
       "birthDate": "1997-05-21T21:33:54.156Z",
       "basicSalary": 80000,
-      "status": "deleted",
+      "status": "single",
       "group": "UI/UX",
       "description": "2020-06-09T09:19:31.449Z"
     },
@@ -308,7 +308,7 @@
       "email": "LGrubbs@adipiscing.ly",
       "birthDate": "1996-05-23T05:42:28.721Z",
       "basicSalary": 65000,
-      "status": "active",
+      "status": "married",
       "group": "Frontend",
       "description": "2019-01-06T05:17:32.275Z"
     },
@@ -321,7 +321,7 @@
       "email": "GCrumbliss@in.com",
       "birthDate": "1995-11-20T09:04:57.240Z",
       "basicSalary": 50000,
-      "status": "deleted",
+      "status": "single",
       "group": "Backend",
       "description": "2020-08-04T04:03:04.911Z"
     },
@@ -334,7 +334,7 @@
       "email": "RSilva@egestas.ly",
       "birthDate": "1993-03-15T14:57:05.985Z",
       "basicSalary": 50000,
-      "status": "deleted",
+      "status": "single",
       "group": "Backend",
       "description": "2019-01-11T17:37:11.424Z"
     },
@@ -347,7 +347,7 @@
       "email": "SZhu@odio.org",
       "birthDate": "1991-01-11T16:03:43.029Z",
       "basicSalary": 80000,
-      "status": "active",
+      "status": "married",
       "group": "DevOps",
       "description": "2020-08-12T22:17:21.055Z"
     },
@@ -360,7 +360,7 @@
       "email": "ARioux@lacus.net",
       "birthDate": "1992-06-19T07:32:07.527Z",
       "basicSalary": 65000,
-      "status": "deleted",
+      "status": "single",
       "group": "Frontend",
       "description": "2019-05-28T15:39:42.854Z"
     },
@@ -373,7 +373,7 @@
       "email": "DKesner@augue.com",
       "birthDate": "1998-12-07T11:33:37.948Z",
       "basicSalary": 80000,
-      "status": "deleted",
+      "status": "single",
       "group": "Business",
       "description": "2020-08-03T13:43:57.402Z"
     },
@@ -386,7 +386,7 @@
       "email": "NMerritt@at.net",
       "birthDate": "1999-04-09T15:01:55.930Z",
       "basicSalary": 50000,
-      "status": "deleted",
+      "status": "single",
       "group": "Business",
       "description": "2019-11-10T09:06:34.716Z"
     },
@@ -399,7 +399,7 @@
       "email": "CCaffrey@turpis.com",
       "birthDate": "1991-04-27T23:12:59.781Z",
       "basicSalary": 80000,
-      "status": "active",
+      "status": "married",
       "group": "Backend",
       "description": "2019-04-10T18:30:17.111Z"
     },
@@ -412,7 +412,7 @@
       "email": "ALoya@etiam.ly",
       "birthDate": "1999-05-02T16:19:11.744Z",
       "basicSalary": 65000,
-      "status": "deleted",
+      "status": "single",
       "group": "Business",
       "description": "2019-09-02T05:19:21.502Z"
     },
@@ -425,7 +425,7 @@
       "email": "MWard@augue.io",
       "birthDate": "1996-07-07T23:31:52.110Z",
       "basicSalary": 65000,
-      "status": "deleted",
+      "status": "single",
       "group": "Frontend",
       "description": "2019-06-17T10:25:11.135Z"
     },
@@ -438,7 +438,7 @@
       "email": "LMccarley@scelerisque.net",
       "birthDate": "1994-01-13T14:13:18.576Z",
       "basicSalary": 65000,
-      "status": "active",
+      "status": "married",
       "group": "Machine Learning",
       "description": "2020-04-23T01:40:00.436Z"
     },
@@ -451,7 +451,7 @@
       "email": "LScribner@molestie.io",
       "birthDate": "1997-03-11T06:37:20.495Z",
       "basicSalary": 50000,
-      "status": "deleted",
+      "status": "single",
       "group": "Backend",
       "description": "2020-07-14T17:25:27.012Z"
     },
@@ -464,7 +464,7 @@
       "email": "VHansen@nec.com",
       "birthDate": "1990-05-29T03:53:59.770Z",
       "basicSalary": 80000,
-      "status": "deleted",
+      "status": "single",
       "group": "Data Science",
       "description": "2020-07-05T08:44:09.185Z"
     },
@@ -477,7 +477,7 @@
       "email": "LFournier@donec.gov",
       "birthDate": "1997-12-13T02:27:46.753Z",
       "basicSalary": 80000,
-      "status": "deleted",
+      "status": "single",
       "group": "Quality Assurance",
       "description": "2020-04-19T00:35:00.836Z"
     },
@@ -490,7 +490,7 @@
       "email": "DHelgren@vel.ly",
       "birthDate": "1994-10-28T00:35:30.904Z",
       "basicSalary": 80000,
-      "status": "deleted",
+      "status": "single",
       "group": "Business",
       "description": "2020-09-11T15:22:50.589Z"
     },
@@ -503,7 +503,7 @@
       "email": "CMajewski@dolor.org",
       "birthDate": "1993-04-07T22:08:45.104Z",
       "basicSalary": 80000,
-      "status": "deleted",
+      "status": "single",
       "group": "Finance",
       "description": "2020-07-08T12:49:19.081Z"
     },
@@ -516,7 +516,7 @@
       "email": "JFavus@morbi.gov",
       "birthDate": "1992-02-10T02:59:03.134Z",
       "basicSalary": 80000,
-      "status": "deleted",
+      "status": "single",
       "group": "DevOps",
       "description": "2019-05-02T12:52:26.245Z"
     },
@@ -529,7 +529,7 @@
       "email": "VHill@fringilla.io",
       "birthDate": "1999-06-28T12:30:12.114Z",
       "basicSalary": 50000,
-      "status": "active",
+      "status": "married",
       "group": "UI/UX",
       "description": "2019-04-28T08:19:06.551Z"
     },
@@ -542,7 +542,7 @@
       "email": "RChester@non.net",
       "birthDate": "1992-06-27T05:52:58.370Z",
       "basicSalary": 50000,
-      "status": "deleted",
+      "status": "single",
       "group": "DevOps",
       "description": "2020-12-12T16:53:26.997Z"
     },
@@ -555,7 +555,7 @@
       "email": "STheiss@placerat.com",
       "birthDate": "1999-08-07T11:04:18.592Z",
       "basicSalary": 65000,
-      "status": "deleted",
+      "status": "single",
       "group": "UI/UX",
       "description": "2020-04-26T12:12:09.383Z"
     },
@@ -568,7 +568,7 @@
       "email": "AYork@sed.ly",
       "birthDate": "1991-02-03T01:05:53.616Z",
       "basicSalary": 65000,
-      "status": "deleted",
+      "status": "single",
       "group": "Machine Learning",
       "description": "2020-04-24T14:04:51.708Z"
     },
@@ -581,7 +581,7 @@
       "email": "JClare@vestibulum.ly",
       "birthDate": "1995-04-23T07:35:11.627Z",
       "basicSalary": 50000,
-      "status": "deleted",
+      "status": "single",
       "group": "Data Science",
       "description": "2019-06-30T00:07:39.598Z"
     },
@@ -594,7 +594,7 @@
       "email": "JKinder@elementum.org",
       "birthDate": "1999-04-23T12:04:15.868Z",
       "basicSalary": 65000,
-      "status": "deleted",
+      "status": "single",
       "group": "Business",
       "description": "2020-04-20T20:41:14.496Z"
     },
@@ -607,7 +607,7 @@
       "email": "KPopsikle@vitae.io",
       "birthDate": "1995-01-06T04:42:52.512Z",
       "basicSalary": 80000,
-      "status": "active",
+      "status": "married",
       "group": "DevOps",
       "description": "2019-05-20T19:32:37.804Z"
     },
@@ -620,7 +620,7 @@
       "email": "TFlores@eget.ly",
       "birthDate": "1998-03-24T22:00:11.919Z",
       "basicSalary": 80000,
-      "status": "deleted",
+      "status": "single",
       "group": "Quality Assurance",
       "description": "2020-11-06T15:18:07.482Z"
     },
@@ -633,7 +633,7 @@
       "email": "KPowers@placerat.net",
       "birthDate": "1993-03-09T15:46:45.350Z",
       "basicSalary": 65000,
-      "status": "active",
+      "status": "married",
       "group": "Data Science",
       "description": "2020-10-07T00:24:07.012Z"
     },
@@ -646,7 +646,7 @@
       "email": "RKandray@ante.org",
       "birthDate": "1995-07-18T11:43:42.967Z",
       "basicSalary": 80000,
-      "status": "active",
+      "status": "married",
       "group": "UI/UX",
       "description": "2019-08-11T22:21:29.841Z"
     },
@@ -659,7 +659,7 @@
       "email": "RStacy@orci.io",
       "birthDate": "1990-07-12T10:30:30.405Z",
       "basicSalary": 50000,
-      "status": "deleted",
+      "status": "single",
       "group": "Data Science",
       "description": "2020-01-21T09:31:11.398Z"
     },
@@ -672,7 +672,7 @@
       "email": "HRager@dolor.io",
       "birthDate": "1999-06-15T02:30:50.555Z",
       "basicSalary": 80000,
-      "status": "deleted",
+      "status": "single",
       "group": "Frontend",
       "description": "2019-06-08T16:54:11.132Z"
     },
@@ -685,7 +685,7 @@
       "email": "SJoyner@sit.io",
       "birthDate": "1994-04-13T18:03:40.127Z",
       "basicSalary": 65000,
-      "status": "deleted",
+      "status": "single",
       "group": "Finance",
       "description": "2019-03-03T14:08:29.434Z"
     },
@@ -698,7 +698,7 @@
       "email": "JTraficante@egestas.ly",
       "birthDate": "1992-06-21T10:15:40.347Z",
       "basicSalary": 80000,
-      "status": "deleted",
+      "status": "single",
       "group": "Business",
       "description": "2020-02-19T19:33:18.429Z"
     },
@@ -711,7 +711,7 @@
       "email": "TClore@lectus.io",
       "birthDate": "1991-12-25T14:15:55.707Z",
       "basicSalary": 80000,
-      "status": "deleted",
+      "status": "single",
       "group": "UI/UX",
       "description": "2019-02-02T04:46:31.668Z"
     },
@@ -724,7 +724,7 @@
       "email": "CPoer@mattis.com",
       "birthDate": "1990-07-10T16:23:59.977Z",
       "basicSalary": 65000,
-      "status": "active",
+      "status": "married",
       "group": "Business",
       "description": "2019-10-05T04:26:25.141Z"
     },
@@ -737,7 +737,7 @@
       "email": "MDobbins@sit.io",
       "birthDate": "1992-07-30T23:15:22.297Z",
       "basicSalary": 80000,
-      "status": "active",
+      "status": "married",
       "group": "Data Science",
       "description": "2020-12-31T19:03:39.297Z"
     },
@@ -750,7 +750,7 @@
       "email": "AEskin@sed.gov",
       "birthDate": "1996-11-19T08:08:37.188Z",
       "basicSalary": 65000,
-      "status": "deleted",
+      "status": "single",
       "group": "Finance",
       "description": "2019-02-27T11:00:56.205Z"
     },
@@ -763,7 +763,7 @@
       "email": "SFinke@amet.net",
       "birthDate": "1991-12-10T12:36:08.479Z",
       "basicSalary": 65000,
-      "status": "deleted",
+      "status": "single",
       "group": "Machine Learning",
       "description": "2020-01-28T05:11:45.906Z"
     },
@@ -776,7 +776,7 @@
       "email": "DFeldman@morbi.org",
       "birthDate": "1997-04-03T07:34:06.628Z",
       "basicSalary": 50000,
-      "status": "deleted",
+      "status": "single",
       "group": "Project Manager",
       "description": "2019-07-18T21:17:19.432Z"
     },
@@ -789,7 +789,7 @@
       "email": "AHarkema@vestibulum.gov",
       "birthDate": "1997-12-30T00:36:40.586Z",
       "basicSalary": 50000,
-      "status": "active",
+      "status": "married",
       "group": "Frontend",
       "description": "2020-07-04T02:57:52.168Z"
     },
@@ -802,7 +802,7 @@
       "email": "OGolaner@risus.org",
       "birthDate": "1999-01-25T18:50:37.581Z",
       "basicSalary": 50000,
-      "status": "deleted",
+      "status": "single",
       "group": "Quality Assurance",
       "description": "2019-09-24T10:20:54.886Z"
     },
@@ -815,7 +815,7 @@
       "email": "LOachs@lacus.net",
       "birthDate": "1999-06-11T00:49:02.614Z",
       "basicSalary": 80000,
-      "status": "deleted",
+      "status": "single",
       "group": "UI/UX",
       "description": "2020-11-07T12:55:39.739Z"
     },
@@ -828,7 +828,7 @@
       "email": "VGarayan@placerat.net",
       "birthDate": "1999-09-18T04:46:31.996Z",
       "basicSalary": 65000,
-      "status": "active",
+      "status": "married",
       "group": "Frontend",
       "description": "2020-01-06T05:40:18.427Z"
     },
@@ -841,7 +841,7 @@
       "email": "CMclaughlin@facilisis.ly",
       "birthDate": "1990-08-07T01:07:21.041Z",
       "basicSalary": 80000,
-      "status": "deleted",
+      "status": "single",
       "group": "Data Science",
       "description": "2020-11-29T20:36:09.030Z"
     },
@@ -854,7 +854,7 @@
       "email": "GMathis@at.org",
       "birthDate": "1994-09-14T21:51:12.437Z",
       "basicSalary": 65000,
-      "status": "active",
+      "status": "married",
       "group": "Backend",
       "description": "2020-08-22T05:38:13.951Z"
     },
@@ -867,7 +867,7 @@
       "email": "BAltermatt@pulvinar.org",
       "birthDate": "1999-12-22T21:19:52.426Z",
       "basicSalary": 80000,
-      "status": "active",
+      "status": "married",
       "group": "DevOps",
       "description": "2019-04-26T18:50:03.287Z"
     },
@@ -880,7 +880,7 @@
       "email": "RAtkins@sit.com",
       "birthDate": "1999-01-29T07:41:44.658Z",
       "basicSalary": 65000,
-      "status": "deleted",
+      "status": "single",
       "group": "Backend",
       "description": "2019-02-09T10:55:53.189Z"
     },
@@ -893,7 +893,7 @@
       "email": "FCheronecook@nunc.io",
       "birthDate": "1991-10-12T12:17:53.572Z",
       "basicSalary": 50000,
-      "status": "active",
+      "status": "married",
       "group": "Frontend",
       "description": "2019-05-06T11:54:27.306Z"
     },
@@ -906,7 +906,7 @@
       "email": "AUlvestad@tempor.ly",
       "birthDate": "1991-10-13T16:16:10.937Z",
       "basicSalary": 80000,
-      "status": "active",
+      "status": "married",
       "group": "Data Science",
       "description": "2020-04-15T16:39:39.405Z"
     },
@@ -919,7 +919,7 @@
       "email": "CHellems@lacus.io",
       "birthDate": "1997-10-15T15:19:47.704Z",
       "basicSalary": 65000,
-      "status": "deleted",
+      "status": "single",
       "group": "Project Manager",
       "description": "2020-08-29T12:35:38.014Z"
     },
@@ -932,7 +932,7 @@
       "email": "RSchotuen@egestas.com",
       "birthDate": "1994-04-25T18:49:58.352Z",
       "basicSalary": 50000,
-      "status": "deleted",
+      "status": "single",
       "group": "Frontend",
       "description": "2019-01-17T11:00:05.367Z"
     },
@@ -945,7 +945,7 @@
       "email": "jTraficante@in.gov",
       "birthDate": "1995-05-15T07:24:38.922Z",
       "basicSalary": 65000,
-      "status": "active",
+      "status": "married",
       "group": "Finance",
       "description": "2019-08-18T11:38:13.827Z"
     },
@@ -958,7 +958,7 @@
       "email": "TChandler@ante.ly",
       "birthDate": "1990-09-22T07:32:09.587Z",
       "basicSalary": 65000,
-      "status": "deleted",
+      "status": "single",
       "group": "Frontend",
       "description": "2019-11-05T03:07:01.229Z"
     },
@@ -971,7 +971,7 @@
       "email": "OGleason@at.ly",
       "birthDate": "1993-09-24T11:56:19.936Z",
       "basicSalary": 65000,
-      "status": "deleted",
+      "status": "single",
       "group": "UI/UX",
       "description": "2019-12-13T17:46:27.719Z"
     },
@@ -984,7 +984,7 @@
       "email": "FGibbs@lectus.org",
       "birthDate": "1991-07-19T05:14:25.893Z",
       "basicSalary": 80000,
-      "status": "active",
+      "status": "married",
       "group": "Project Manager",
       "description": "2019-12-17T05:19:44.214Z"
     },
@@ -997,7 +997,7 @@
       "email": "JBodine@lectus.com",
       "birthDate": "1997-05-04T22:08:09.206Z",
       "basicSalary": 65000,
-      "status": "deleted",
+      "status": "single",
       "group": "Frontend",
       "description": "2019-04-29T10:37:13.595Z"
     },
@@ -1010,7 +1010,7 @@
       "email": "DTran@magna.net",
       "birthDate": "1997-07-12T21:47:00.057Z",
       "basicSalary": 50000,
-      "status": "deleted",
+      "status": "single",
       "group": "Project Manager",
       "description": "2019-06-22T13:21:49.704Z"
     },
@@ -1023,7 +1023,7 @@
       "email": "CTeel@tincidunt.ly",
       "birthDate": "1990-02-25T16:29:18.712Z",
       "basicSalary": 80000,
-      "status": "active",
+      "status": "married",
       "group": "Quality Assurance",
       "description": "2020-04-21T15:15:05.613Z"
     },
@@ -1036,7 +1036,7 @@
       "email": "SSchacher@vitae.org",
       "birthDate": "1990-05-29T19:55:45.103Z",
       "basicSalary": 65000,
-      "status": "deleted",
+      "status": "single",
       "group": "UI/UX",
       "description": "2020-05-22T23:42:39.008Z"
     },
@@ -1049,7 +1049,7 @@
       "email": "ADeliu@sit.io",
       "birthDate": "1991-04-16T04:40:14.989Z",
       "basicSalary": 50000,
-      "status": "deleted",
+      "status": "single",
       "group": "Business",
       "description": "2019-03-14T10:52:52.588Z"
     },
@@ -1062,7 +1062,7 @@
       "email": "NPatino@pulvinar.ly",
       "birthDate": "1998-10-02T20:09:36.589Z",
       "basicSalary": 65000,
-      "status": "deleted",
+      "status": "single",
       "group": "Quality Assurance",
       "description": "2019-12-24T05:56:41.328Z"
     },
@@ -1075,7 +1075,7 @@
       "email": "CCase@porta.ly",
       "birthDate": "1997-08-20T03:47:38.293Z",
       "basicSalary": 50000,
-      "status": "active",
+      "status": "married",
       "group": "Business",
       "description": "2019-11-15T12:17:02.503Z"
     },
@@ -1088,7 +1088,7 @@
       "email": "LWyner@lorem.org",
       "birthDate": "1993-09-24T16:30:54.468Z",
       "basicSalary": 80000,
-      "status": "active",
+      "status": "married",
       "group": "UI/UX",
       "description": "2020-03-01T02:23:01.254Z"
     },
@@ -1101,7 +1101,7 @@
       "email": "MCharleston@adipiscing.io",
       "birthDate": "1991-04-18T02:40:41.539Z",
       "basicSalary": 65000,
-      "status": "active",
+      "status": "married",
       "group": "Finance",
       "description": "2020-12-30T10:51:42.951Z"
     },
@@ -1114,7 +1114,7 @@
       "email": "FGarcia@convallis.gov",
       "birthDate": "1998-06-26T22:18:22.039Z",
       "basicSalary": 50000,
-      "status": "active",
+      "status": "married",
       "group": "Machine Learning",
       "description": "2020-02-02T00:48:12.412Z"
     },
@@ -1127,7 +1127,7 @@
       "email": "SPreston@dolor.io",
       "birthDate": "1998-09-26T22:02:42.170Z",
       "basicSalary": 50000,
-      "status": "deleted",
+      "status": "single",
       "group": "Business",
       "description": "2020-01-05T21:47:24.881Z"
     },
@@ -1140,7 +1140,7 @@
       "email": "RBest@etiam.org",
       "birthDate": "1992-02-10T22:53:18.683Z",
       "basicSalary": 65000,
-      "status": "active",
+      "status": "married",
       "group": "DevOps",
       "description": "2019-07-07T14:53:26.411Z"
     },
@@ -1153,7 +1153,7 @@
       "email": "GNunez@ipsum.ly",
       "birthDate": "1994-11-28T03:23:52.929Z",
       "basicSalary": 80000,
-      "status": "deleted",
+      "status": "single",
       "group": "Frontend",
       "description": "2019-10-07T09:34:03.920Z"
     },
@@ -1166,7 +1166,7 @@
       "email": "ALang@tempor.ly",
       "birthDate": "1998-07-03T01:27:04.204Z",
       "basicSalary": 80000,
-      "status": "deleted",
+      "status": "single",
       "group": "Business",
       "description": "2019-03-16T21:51:18.817Z"
     },
@@ -1179,7 +1179,7 @@
       "email": "VLafaye@et.ly",
       "birthDate": "1996-07-08T22:19:04.084Z",
       "basicSalary": 50000,
-      "status": "active",
+      "status": "married",
       "group": "Quality Assurance",
       "description": "2019-06-08T23:46:17.127Z"
     },
@@ -1192,7 +1192,7 @@
       "email": "YWright@etiam.com",
       "birthDate": "1991-09-06T12:23:40.060Z",
       "basicSalary": 80000,
-      "status": "active",
+      "status": "married",
       "group": "Machine Learning",
       "description": "2020-05-01T01:26:54.238Z"
     },
@@ -1205,7 +1205,7 @@
       "email": "GSewell@et.com",
       "birthDate": "1992-06-07T18:42:36.628Z",
       "basicSalary": 50000,
-      "status": "active",
+      "status": "married",
       "group": "Backend",
       "description": "2019-12-29T21:13:25.330Z"
     },
@@ -1218,7 +1218,7 @@
       "email": "CLeon@aenean.com",
       "birthDate": "1999-03-03T00:01:59.717Z",
       "basicSalary": 65000,
-      "status": "active",
+      "status": "married",
       "group": "Finance",
       "description": "2020-02-12T04:37:59.575Z"
     },
@@ -1231,7 +1231,7 @@
       "email": "PRoth@donec.net",
       "birthDate": "1995-10-01T20:27:17.319Z",
       "basicSalary": 80000,
-      "status": "deleted",
+      "status": "single",
       "group": "Backend",
       "description": "2019-03-10T01:03:05.955Z"
     },
@@ -1244,7 +1244,7 @@
       "email": "DMolina@odio.ly",
       "birthDate": "1999-06-01T19:44:04.354Z",
       "basicSalary": 80000,
-      "status": "deleted",
+      "status": "single",
       "group": "Data Science",
       "description": "2020-05-08T11:54:41.428Z"
     },
@@ -1257,7 +1257,7 @@
       "email": "CReggio@sollicitudin.gov",
       "birthDate": "1993-10-10T12:15:00.100Z",
       "basicSalary": 65000,
-      "status": "deleted",
+      "status": "single",
       "group": "Project Manager",
       "description": "2020-10-27T19:56:36.529Z"
     },
@@ -1270,7 +1270,7 @@
       "email": "BLompa@ipsum.org",
       "birthDate": "1999-03-08T00:02:44.406Z",
       "basicSalary": 65000,
-      "status": "deleted",
+      "status": "single",
       "group": "Machine Learning",
       "description": "2020-06-13T20:46:22.768Z"
     },
@@ -1283,7 +1283,7 @@
       "email": "JSturm@id.com",
       "birthDate": "1999-01-18T06:20:08.734Z",
       "basicSalary": 80000,
-      "status": "deleted",
+      "status": "single",
       "group": "Quality Assurance",
       "description": "2020-03-08T02:42:07.840Z"
     },
@@ -1296,7 +1296,7 @@
       "email": "LMahajan@elit.org",
       "birthDate": "1995-09-05T20:14:32.570Z",
       "basicSalary": 65000,
-      "status": "active",
+      "status": "married",
       "group": "Data Science",
       "description": "2019-01-15T22:32:45.811Z"
     }
