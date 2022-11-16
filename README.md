@@ -2,9 +2,13 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.1.0.
 
-## Development server
+Mock server are using json-server and the mock data is generated using json-server-init with [Filltext.com](http://www.filltext.com/).
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Step by step to run application and environment
+
+1. Open new terimnal then type `npm run server` for mockup local server.
+2. Open new terminal again then un `ng serve` for a angular local server. Navigate to `http://localhost:4200/`.
+3. Login with one of the employee in the folder db file `db.json` or use `username: MKoskovich` `passowrd: wH0Qxp6J`
 
 ## Code scaffolding
 
@@ -14,14 +18,11 @@ Run `ng generate component component-name` to generate a new component. You can 
 
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
 
-## Running unit tests
+## Framework and Library used
+- [Angular](https://angular.io/)
+- [Angular Material](https://material.angular.io/)
+- [json-server](https://github.com/typicode/json-server)
+- [json-server-init](https://github.com/dfsq/json-server-init)
+- [Filltext.com](http://www.filltext.com/)
+- [Nodejs](https://nodejs.org/)
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
