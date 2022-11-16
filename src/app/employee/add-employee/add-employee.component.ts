@@ -45,6 +45,7 @@ export class AddEmployeeComponent implements OnInit, OnDestroy {
 
   ngOnInit(): void {
     this.groupList = this.employeeService.GROUP;
+    this.employeeService.setPageTitle('Add Employee');
     this.initAutoComplete();
   }
 

@@ -1,0 +1,19 @@
+<mat-toolbar color="primary" class="mb-4">
+  <div class="grid grid-nogutter toolbar w-full">
+    <div class="col-6">
+      <span>{{ title | async }}</span>
+    </div>
+    <div class="col-6 toggle-logout">
+      <button
+        type="button"
+        aria-label="Toggle logout"
+        mat-raised-button
+        (click)="logout()"
+      >
+        <mat-icon aria-label="icon">logout</mat-icon>
+        Logout
+      </button>
+    </div>
+  </div>
+</mat-toolbar>
+<router-outlet></router-outlet>

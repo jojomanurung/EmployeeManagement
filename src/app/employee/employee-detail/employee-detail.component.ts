@@ -22,6 +22,7 @@ export class EmployeeDetailComponent implements OnInit, OnDestroy {
 
   ngOnInit(): void {
     this.employeeId = this.route.snapshot.paramMap.get('id')!;
+    this.employeeService.setPageTitle('Employee Detail');
     console.log(this.employeeId);
     this.getOneEmployee();
   }

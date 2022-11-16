@@ -1,5 +1,6 @@
 import { HttpClient, HttpParams } from '@angular/common/http';
 import { Injectable } from '@angular/core';
+import { BehaviorSubject } from 'rxjs';
 import { Employee } from '../interfaces/employee.type';
 
 @Injectable({
@@ -7,6 +8,8 @@ import { Employee } from '../interfaces/employee.type';
 })
 export class EmployeeService {
   API = 'http://localhost:3000/api';
+  private pageTitle: BehaviorSubject<string> = new BehaviorSubject<string>('');
+  pageTitle$ = this.pageTitle.asObservable();
 
   GROUP = [
     'Finance',
@@ -22,6 +25,10 @@ export class EmployeeService {
   ];
 
   constructor(private http: HttpClient) {}
+
+  setPageTitle(value: string) {
+    this.pageTitle.next(value);
+  }
 
   getAllEmployee() {
     return this.http.get<Employee[]>(this.API + '/employee');

@@ -1,7 +1,4 @@
 <div class="grid grid-nogutter">
-  <div class="col-12 pt-4 px-4">
-    <h1>List of Employee</h1>
-  </div>
   <div class="col-12">
     <div class="grid grid-nogutter max-w-screen px-4">
       <div class="col-12">
@@ -96,7 +93,9 @@
           <ng-container matColumnDef="name">
             <th mat-header-cell *matHeaderCellDef mat-sort-header="firstName">Name</th>
             <td mat-cell *matCellDef="let element">
-              {{ element?.firstName }} {{ element?.lastName }}
+              <span style="cursor: pointer" (click)="employeeDetail(element?.id)">
+                {{ element?.firstName }} {{ element?.lastName }}
+              </span>
             </td>
           </ng-container>
 
@@ -136,6 +135,9 @@
           <ng-container matColumnDef="action">
             <th mat-header-cell *matHeaderCellDef>Action</th>
             <td mat-cell *matCellDef="let element">
+              <button mat-icon-button (click)="employeeDetail(element?.id)">
+                <mat-icon>visibility</mat-icon>
+              </button>
               <button mat-icon-button (click)="editEmployee(element?.id)">
                 <mat-icon>edit</mat-icon>
               </button>

@@ -73,6 +73,7 @@ export class EmployeeListComponent implements OnInit, OnDestroy {
 
   ngOnInit(): void {
     this.groupList = this.employeeService.GROUP;
+    this.employeeService.setPageTitle('List of Employee');
     this.getEmployee();
     this.initFilter();
   }
@@ -198,10 +199,6 @@ export class EmployeeListComponent implements OnInit, OnDestroy {
       horizontalPosition: 'center',
       panelClass: 'edit',
     });
-
-    this.subs.sink = snackBar.afterDismissed().subscribe(() => {
-      this.router.navigate(['add-employee']);
-    });
   }
 
   deleteEmployee(id: number) {
@@ -223,6 +220,10 @@ export class EmployeeListComponent implements OnInit, OnDestroy {
       .subscribe(() => {
         this.getEmployee();
       });
+  }
+
+  employeeDetail(id: number) {
+    this.router.navigate([`/employee-detail/${id}`]);
   }
 
   ngOnDestroy(): void {

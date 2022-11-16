@@ -29,6 +29,7 @@ import {
   MAT_MOMENT_DATE_ADAPTER_OPTIONS,
 } from '@angular/material-moment-adapter';
 import { MatCardModule } from '@angular/material/card';
+import { EmployeeComponent } from './employee.component';
 
 const Material: any = [
   MatAutocompleteModule,
@@ -52,7 +53,8 @@ const Material: any = [
   declarations: [
     EmployeeListComponent,
     AddEmployeeComponent,
-    EmployeeDetailComponent
+    EmployeeDetailComponent,
+    EmployeeComponent
   ],
   imports: [
     CommonModule,
