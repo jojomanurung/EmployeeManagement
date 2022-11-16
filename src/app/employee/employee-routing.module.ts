@@ -15,13 +15,17 @@ const routes: Routes = [
     component: EmployeeListComponent,
   },
   {
-    path: 'employee-detail',
+    path: 'employee-detail/:id',
     component: EmployeeDetailComponent,
   },
   {
     path: 'add-employee',
     component: AddEmployeeComponent,
   },
+  {
+    path: '**',
+    redirectTo: 'employee-list'
+  }
 ];
 
 @NgModule({

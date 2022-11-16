@@ -27,6 +27,10 @@ export class EmployeeService {
     return this.http.get<Employee[]>(this.API + '/employee');
   }
 
+  getOneEmployee(id: string) {
+    return this.http.get<Employee>(this.API + '/employee/' + id);
+  }
+
   addNewEmployee(payload: any) {
     return this.http.post<Employee[]>(this.API + '/employee/', payload);
   }

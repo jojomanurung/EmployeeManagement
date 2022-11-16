@@ -1,1 +1,82 @@
-<p>employee-detail works!</p>
+<div class="grid grid-nogutter h-full w-full">
+  <div
+    class="col-12 flex flex-column justify-content-center align-items-center"
+  >
+    <mat-card class="card mat-elevation-z3">
+      <mat-card-content>
+        <div class="grid grid-nogutter">
+          <div class="col field">
+            <p>Name :</p>
+          </div>
+          <div class="w-19rem ml-5 field">
+            <p>{{ employeeData.firstName }} {{ employeeData.lastName }}</p>
+          </div>
+        </div>
+        <div class="grid grid-nogutter">
+          <div class="col field">
+            <p>Email :</p>
+          </div>
+          <div class="w-19rem ml-5 field">
+            <p>{{ employeeData.email }}</p>
+          </div>
+        </div>
+        <div class="grid grid-nogutter">
+          <div class="col field">
+            <p>Birth Date :</p>
+          </div>
+          <div class="w-19rem ml-5 field">
+            <p>{{ employeeData.birthDate | momentDate: "DD/MM/YYYY" }}</p>
+          </div>
+        </div>
+        <div class="grid grid-nogutter">
+          <div class="col field">
+            <p>Basic Salary :</p>
+          </div>
+          <div class="w-19rem ml-5 field">
+            <p>
+              {{
+                employeeData.basicSalary
+                  | currency: "IDR":"symbol-narrow":"4.2-2"
+              }}
+            </p>
+          </div>
+        </div>
+        <div class="grid grid-nogutter">
+          <div class="col field">
+            <p>Status :</p>
+          </div>
+          <div class="w-19rem ml-5 field">
+            <p>
+              {{ employeeData.status === "married" ? "Married" : "Single" }}
+            </p>
+          </div>
+        </div>
+        <div class="grid grid-nogutter">
+          <div class="col field">
+            <p>Group :</p>
+          </div>
+          <div class="w-19rem ml-5 field">
+            <p>{{ employeeData.group }}</p>
+          </div>
+        </div>
+        <div class="grid grid-nogutter">
+          <div class="col field">
+            <p>Description :</p>
+          </div>
+          <div class="w-19rem ml-5 field">
+            <p>{{ employeeData.description | momentDate: "DD/MM/YYYY" }}</p>
+          </div>
+        </div>
+        <div class="grid grid-nogutter justify-center">
+          <a
+            mat-raised-button
+            [disableRipple]="true"
+            color="primary"
+            routerLink="/employee-list"
+            >Ok</a
+          >
+        </div>
+      </mat-card-content>
+    </mat-card>
+  </div>
+</div>

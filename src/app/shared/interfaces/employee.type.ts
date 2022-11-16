@@ -6,7 +6,7 @@ export interface Employee {
   lastName: string;
   email: string;
   birthDate: Date;
-  basicSalary: DoubleRange;
+  basicSalary: number;
   status: string;
   group: string;
   description: Date;
